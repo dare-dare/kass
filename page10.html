@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="page10.css" rel="stylesheet" />
+    <style>
+      .page-select {
+        width: 90% !important;
+        margin: 16px !important;
+        padding: 8px 16px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 0 !important;
+        background: #f5f5f5 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="window.open(value, '_self')" class="page-select">
+      <option value="page0.html">페이지 0</option>
+      <option value="page1.html">페이지 1</option>
+      <option value="page2.html">페이지 2</option>
+      <option value="page3.html">페이지 3</option>
+      <option value="page4.html">페이지 4</option>
+      <option value="page5.html">페이지 5</option>
+      <option value="page6.html">페이지 6</option>
+      <option value="page7.html">페이지 7</option>
+      <option value="page8.html">페이지 8</option>
+      <option value="page9.html">페이지 9</option>
+      <option value="page10.html" selected>페이지 10</option>
+      <option value="page11.html">페이지 11</option>
+      <option value="page12.html">페이지 12</option>
+    </select>
+
+    <div class="page10">
+      <div class="header">
+        <div class="nav">
+          <div class="nav-left">
+            <img src="image/arrow-icon.png" class="arrow-icon" />
+            <img src="image/logo.png" class="logo-img" />
+          </div>
+          <div class="nav-right">
+            <p class="nav-title">Word Search</p>
+            <img src="image/menu-icon.png" class="menu-icon" />
+          </div>
+        </div>
+        <div class="header-contents">
+          <p>SOLAS 1996-1998 Amend / Chapter II-2 / Reg. 26</p>
+          <p>
+            Paragraphs 2.2(7) and 2.2(13) of this regulation apply to ships
+            constructed on or after 1 February 1992
+          </p>
+        </div>
+      </div>
+
+      <div class="side-nav">
+        <div class="side-nav-header">
+          <div class="close-icon">
+            <span class="material-icons"> close </span>
+          </div>
+          <p>MENU</p>
+        </div>
+        <div class="side-nav-body">
+          <div class="side-nav-title">
+            <img src="image/earth-icon.png" />
+            <span>국제협약</span>
+          </div>
+          <button class="side-nav-button">
+            <img src="image/tree-icon.png" class="side-nav-button-icon" />
+            <p>Tree View 검색</p>
+          </button>
+          <button class="side-nav-button">
+            <img
+              src="image/search-icon.png"
+              class="side-nav-button-icon search"
+            />
+            <p>Keyword 검색</p>
+          </button>
+          <button class="side-nav-button">
+            <img src="image/ship-icon.png" class="side-nav-button-icon ship" />
+            <p>My Ship 검색</p>
+          </button>
+          <div class="side-nav-title">
+            <img src="image/list-plus-icon.png" class="plus" />
+            <span>PSC 점검</span>
+          </div>
+          <button class="side-nav-button list">
+            <img src="image/list-icon.png" class="side-nav-button-icon list" />
+            <p>재박선박현황</p>
+          </button>
+          <button class="side-nav-button psc">
+            <img
+              src="image/check-icon.png"
+              class="side-nav-button-icon chekch"
+            />
+            <p>PSC 점검표</p>
+          </button>
+        </div>
+        <div class="side-nav-logout">
+          <img src="image/logout.png" />
+          <span>Logout</span>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="title">
+          Regulation 26 Fire integrity of bulkheads and decks in ships carrying
+          more than 36 passengers
+        </div>
+        <hr />
+        <div class="des">
+          (Paragraphs 2.2(7) and 2.2(13) of this regulation apply to ships
+          constructed on or after 1 February 1992) 1 In addition to complying
+          with the specific provisions for fire integrity of bulkheads and decks
+          mentioned elsewhere in this Part, the minimum fire integrity of all
+          bulkheads and decks shall be as prescribed in tables 26.1 and 26.2
+          Where, due to any particular structural arrangements in the ship,
+          difficulty is experienced in determining from the tables the minimum
+          fire integrity value of any divisions, such values shall be determined
+          to the satisfaction of the Administration. 2 The following
+          requirements shall govern application of the tables: .1 Table 26.1
+          shall apply to bulkheads not bounding either main vertical zones or
+          horizontal zones.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function () {
+      $(".menu-icon").on("click", function (e) {
+        $(".side-nav").addClass("show");
+      });
+
+      $(".close-icon").on("click", function (e) {
+        $(this).closest(".side-nav").removeClass("show");
+      });
+    });
+  </script>
+</html>

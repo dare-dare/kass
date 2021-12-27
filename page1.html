@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="page1.css" rel="stylesheet" />
+    <style>
+      .page-select {
+        width: 90% !important;
+        margin: 16px !important;
+        padding: 8px 16px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 0 !important;
+        background: #f5f5f5 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="window.open(value, '_self')" class="page-select">
+      <option value="page0.html">페이지 0</option>
+      <option value="page1.html" selected>페이지 1</option>
+      <option value="page2.html">페이지 2</option>
+      <option value="page3.html">페이지 3</option>
+      <option value="page4.html">페이지 4</option>
+      <option value="page5.html">페이지 5</option>
+      <option value="page6.html">페이지 6</option>
+      <option value="page7.html">페이지 7</option>
+      <option value="page8.html">페이지 8</option>
+      <option value="page9.html">페이지 9</option>
+      <option value="page10.html">페이지 10</option>
+      <option value="page11.html">페이지 11</option>
+      <option value="page12.html">페이지 12</option>
+    </select>
+
+    <div class="page1">
+      <div class="header">
+        <img src="image/logo.png" class="logo-img" />
+        <p class="header-title">Login</p>
+        <div class="blur"></div>
+      </div>
+      <div class="page">
+        <input class="input" placeholder="ID" />
+        <input class="input" placeholder="Password" />
+        <div class="checkbox-wrapper">
+          <label class="checkbox"><input type="checkbox" />Remember ID</label>
+          <label class="checkbox"><input type="checkbox" />Remember PW</label>
+        </div>
+        <button class="login-button">Login</button>
+      </div>
+    </div>
+  </body>
+</html>

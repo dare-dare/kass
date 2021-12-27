@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="page3.css" rel="stylesheet" />
+    <style>
+      .page-select {
+        width: 90% !important;
+        margin: 16px !important;
+        padding: 8px 16px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 0 !important;
+        background: #f5f5f5 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="window.open(value, '_self')" class="page-select">
+      <option value="page0.html">페이지 0</option>
+      <option value="page1.html">페이지 1</option>
+      <option value="page2.html">페이지 2</option>
+      <option value="page3.html" selected>페이지 3</option>
+      <option value="page4.html">페이지 4</option>
+      <option value="page5.html">페이지 5</option>
+      <option value="page6.html">페이지 6</option>
+      <option value="page7.html">페이지 7</option>
+      <option value="page8.html">페이지 8</option>
+      <option value="page9.html">페이지 9</option>
+      <option value="page10.html">페이지 10</option>
+      <option value="page11.html">페이지 11</option>
+      <option value="page12.html">페이지 12</option>
+    </select>
+
+    <div class="page3">
+      <div class="header">
+        <div class="nav">
+          <div class="nav-left">
+            <img src="image/arrow-icon.png" class="arrow-icon" />
+            <img src="image/logo.png" class="logo-img" />
+          </div>
+          <div class="nav-right">
+            <p class="nav-title">재박선박현황</p>
+            <img src="image/menu-icon.png" class="menu-icon" />
+          </div>
+        </div>
+        <div class="header-contents">
+          <button>
+            <span>재박선박</span>
+            <span class="number blue">25</span>
+          </button>
+          <button>
+            <span>PSC 점검대상</span>
+            <span class="number green">25</span>
+          </button>
+          <button>
+            <span>PSC 점검지정</span>
+            <span class="number red">25</span>
+          </button>
+        </div>
+      </div>
+      <div class="side-nav">
+        <div class="side-nav-header">
+          <div class="close-icon">
+            <span class="material-icons"> close </span>
+          </div>
+          <p>MENU</p>
+        </div>
+        <div class="side-nav-body">
+          <div class="side-nav-title">
+            <img src="image/earth-icon.png" />
+            <span>국제협약</span>
+          </div>
+          <button class="side-nav-button">
+            <img src="image/tree-icon.png" class="side-nav-button-icon" />
+            <p>Tree View 검색</p>
+          </button>
+          <button class="side-nav-button">
+            <img
+              src="image/search-icon.png"
+              class="side-nav-button-icon search"
+            />
+            <p>Keyword 검색</p>
+          </button>
+          <button class="side-nav-button">
+            <img src="image/ship-icon.png" class="side-nav-button-icon ship" />
+            <p>My Ship 검색</p>
+          </button>
+          <div class="side-nav-title">
+            <img src="image/list-plus-icon.png" class="plus" />
+            <span>PSC 점검</span>
+          </div>
+          <button class="side-nav-button list">
+            <img src="image/list-icon.png" class="side-nav-button-icon list" />
+            <p>재박선박현황</p>
+          </button>
+          <button class="side-nav-button psc">
+            <img
+              src="image/check-icon.png"
+              class="side-nav-button-icon chekch"
+            />
+            <p>PSC 점검표</p>
+          </button>
+        </div>
+        <div class="side-nav-logout">
+          <img src="image/logout.png" />
+          <span>Logout</span>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="date">Date : 07 October 2021</div>
+        <ul class="list">
+          <li class="list-item">
+            <img class="expand-icon more" src="image/down.png" />
+            <img class="expand-icon less" src="image/up.png" />
+            <p class="list-title">
+              <span class="circle green"></span><span class="circle red"></span
+              ><span>MSC DAMLA</span>
+            </p>
+            <p>
+              Low Risk Ship, Priority II <br />
+              Window Inspection Range : 08. 08. 2021 ~ 08. 10. 2021
+            </p>
+            <div class="list-more">
+              <hr />
+              <div class="list-more-contents">
+                <div class="contents-left">
+                  <p>
+                    <span class="contents-title">호출부호</span>
+                    <span class="contents-value">HCCR</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">국적</span>
+                    <span class="contents-value">파나마</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">IMO번호</span>
+                    <span class="contents-value">9250983</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선박종류</span>
+                    <span class="contents-value">풀컨테이너선</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">총톤수</span>
+                    <span class="contents-value">71.797</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">총길이</span>
+                    <span class="contents-value">29.32</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선박구분</span>
+                    <span class="contents-value">외항선</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선종분류</span>
+                    <span class="contents-value">풀컨테이너선</span>
+                  </p>
+                </div>
+                <div class="contents-right">
+                  <p>
+                    <span class="contents-title">계선장소</span>
+                    <span class="contents-value">신항3부두 4선석</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">입항일시 (관제 )</span>
+                    <span class="contents-value">20.09.09 08:00</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">입항최초시간</span>
+                    <span class="contents-value">20.09.03 08:00</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선사 / 대리점</span>
+                    <span class="contents-value">엘에스씨코리아(주)</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">신고구분</span>
+                    <span class="contents-value">외항입항</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">부두구분</span>
+                    <span class="contents-value">신항</span>
+                  </p>
+                </div>
+              </div>
+              <div class="buttons">
+                <button>PSC 점검표</button>
+                <button>APSIS 상세</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="expand-icon more" src="image/down.png" />
+            <img class="expand-icon less" src="image/up.png" />
+            <p class="list-title">
+              <span class="circle green"></span><span>MSC DAMLA</span>
+            </p>
+            <p>
+              Low Risk Ship, Priority II <br />
+              Window Inspection Range : 08. 08. 2021 ~ 08. 10. 2021
+            </p>
+            <div class="list-more">
+              <hr />
+              <div class="list-more-contents">
+                <div class="contents-left">
+                  <p>
+                    <span class="contents-title">호출부호</span>
+                    <span class="contents-value">HCCR</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">국적</span>
+                    <span class="contents-value">파나마</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">IMO번호</span>
+                    <span class="contents-value">9250983</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선박종류</span>
+                    <span class="contents-value">풀컨테이너선</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">총톤수</span>
+                    <span class="contents-value">71.797</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">총길이</span>
+                    <span class="contents-value">29.32</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선박구분</span>
+                    <span class="contents-value">외항선</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선종분류</span>
+                    <span class="contents-value">풀컨테이너선</span>
+                  </p>
+                </div>
+                <div class="contents-right">
+                  <p>
+                    <span class="contents-title">계선장소</span>
+                    <span class="contents-value">신항3부두 4선석</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">입항일시 (관제 )</span>
+                    <span class="contents-value">20.09.09 08:00</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">입항최초시간</span>
+                    <span class="contents-value">20.09.03 08:00</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">선사 / 대리점</span>
+                    <span class="contents-value">엘에스씨코리아(주)</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">신고구분</span>
+                    <span class="contents-value">외항입항</span>
+                  </p>
+                  <p>
+                    <span class="contents-title">부두구분</span>
+                    <span class="contents-value">신항</span>
+                  </p>
+                </div>
+              </div>
+              <div class="buttons">
+                <button>PSC 점검표</button>
+                <button>APSIS 상세</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="expand-icon more" src="image/down.png" />
+            <img class="expand-icon less" src="image/up.png" />
+            <p class="list-title">
+              <span class="circle red"></span><span>MSC DAMLA</span>
+            </p>
+            <p>
+              Low Risk Ship, Priority II <br />
+              Window Inspection Range : 08. 08. 2021 ~ 08. 10. 2021
+            </p>
+          </li>
+          <li class="list-item">
+            <img class="expand-icon more" src="image/down.png" />
+            <img class="expand-icon less" src="image/up.png" />
+            <p class="list-title">
+              <span class="circle green"></span><span>MSC DAMLA</span>
+            </p>
+            <p>
+              Low Risk Ship, Priority II <br />
+              Window Inspection Range : 08. 08. 2021 ~ 08. 10. 2021
+            </p>
+          </li>
+          <li class="list-item">
+            <img class="expand-icon more" src="image/down.png" />
+            <img class="expand-icon less" src="image/up.png" />
+            <p class="list-title">
+              <span class="circle green"></span><span>MSC DAMLA</span>
+            </p>
+            <p>
+              Low Risk Ship, Priority II <br />
+              Window Inspection Range : 08. 08. 2021 ~ 08. 10. 2021
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".expand-icon").click(function () {
+        $(this).parent().toggleClass("show");
+      });
+
+      $(".menu-icon").on("click", function (e) {
+        $(".side-nav").addClass("show");
+      });
+
+      $(".close-icon").on("click", function (e) {
+        $(this).closest(".side-nav").removeClass("show");
+      });
+    });
+  </script>
+</html>
